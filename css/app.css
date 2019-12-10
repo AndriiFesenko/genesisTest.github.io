@@ -1,0 +1,336 @@
+#container {
+    height: 550px;
+    width: 1000px;
+    margin: 0px auto;
+}
+#container .wrapper{
+    display: none;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+#container .wrapper .left-side{
+    position: relative;
+    width: 55%;
+    height: 100%;
+    background-image: url('../images/depositphotos_32904189-stock-photo-pretty-girl.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container .wrapper .left-side .text {
+    position: absolute;
+    height: 8%;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 7px;
+    padding: 0px 80px;
+    background-color: rgba(255,255,255,0.7);
+    z-index: 1;
+}
+#container .wrapper .left-side .text .box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#container .wrapper .left-side .popup-template {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    padding: 0px 60px;
+    box-sizing: border-box;
+}
+#container .wrapper .left-side .popup-template h1{
+    margin: 0px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 145px;
+    line-height: 160px;
+    color: white;
+}
+#container .wrapper .left-side .popup-template h4{
+    margin: 0px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+    white-space: pre-line;
+}
+#container .wrapper #right-side {
+    position: relative;
+    background-color: #f6f5f5;
+    margin-bottom: -2.5%;
+    height: 85%;
+    width: 44%;
+    padding: 45px 30px;
+    box-sizing: border-box;
+}
+#container .wrapper #right-side .icon{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10%;
+    /* container width 44%(1% is a border) and 20.5px is half of element size  */
+    left: calc(-20.5px - 1%);
+    height: 41px;
+    width: 41px;
+    border-radius: 50%;
+}
+#container .wrapper #right-side .icon .icon-item{
+    height: 80%;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+#container .wrapper #right-side .content:last-of-type {
+    display: flex;
+    flex-direction: column;
+}
+#container .wrapper #right-side .content:last-of-type p {
+    font-size: 15.7px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px;
+    white-space: pre-line;
+    margin-bottom: 20px;
+}
+#container .wrapper #right-side .content:last-of-type input {
+    width: 50%;
+    height: 41px;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+#container .wrapper #right-side .content input:active {
+    border: none;
+    color: white;
+}
+#container .wrapper #right-side .content input:focus {
+    outline: none;
+}
+#container .wrapper #right-side .content input.active {
+    border: none;
+    color: white;
+}
+#container .wrapper #right-side .content:last-of-type input:nth-of-type(2) {
+    margin: 7px 0px;
+}
+#container .wrapper #right-side .content #continue {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px 0px 15px;
+    width: 40%;
+    border-radius: 10px;
+}
+#container .wrapper #right-side .content #continue:hover {
+    cursor: pointer;
+}
+
+/* form-1 starts*/
+#container .wrapper.form-1.active{
+    display: flex;
+    background-color: #fc8950;
+}
+#container .wrapper.form-1.active .left-side .popup-template {
+    background-color: rgb(252, 137, 80, 0.6);
+}
+#container .wrapper.form-1.active #right-side .icon{
+    background-color: rgb(252, 137, 80);
+}
+#container .wrapper.form-1.active #right-side .icon .icon-item{
+    background-image: url('../images/heart-orange.jpg');
+}
+
+#container .wrapper.form-1.active #right-side .content:last-of-type p {
+    color: #fc8950;
+}
+#container .wrapper.form-1.active #right-side .content input.active {
+    background-color: #fc8950;
+}
+#container .wrapper.form-1.active #right-side .content #continue:active {
+    background-color: #fc8950;
+    color: white;
+}
+/* form-1 finishes */
+
+
+/* form-2  starts*/
+#container .wrapper.form-2.active{
+    display: flex;
+    background-color: #fcc150;
+}
+
+#container .wrapper.form-2.active .left-side .popup-template {
+    background-color: rgb(252, 193, 80, 0.6);
+}
+#container .wrapper.form-2.active #right-side .icon{
+    background-color: rgb(252, 193, 80);
+}
+#container .wrapper.form-2.active #right-side .icon .icon-item{
+    background-image: url('../images/heart-yellow.jpg');
+}
+#container .wrapper.form-2.active #right-side .content input[name=А]{
+    background-image: url('../images/Vector-smart-object-copy-2.jpg');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 20% center;
+}
+#container .wrapper.form-2.active #right-side .content input[name=Б]{
+    background-image: url('../images/Vector-smart-object.jpg');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 20% center;
+}
+#container .wrapper.form-2.active #right-side .content input.active {
+    background-color: #fcc150;
+}
+#container .wrapper.form-2.active #right-side .content:last-of-type p {
+    color: #fcc150;
+}
+#container .wrapper.form-2.active #right-side .content #continue:active {
+    background-color: #fcc150;
+    color: white;
+}
+/* form-2  finishes*/
+
+/* form-3 starts */
+
+
+#container .wrapper.form-3.active{
+    display: flex;
+    background-color: #1da7c0;
+}
+
+#container .wrapper.form-3.active .left-side .popup-template {
+    display: none;
+}
+#container .wrapper.form-3.active #right-side .icon{
+    background-color: #1da7c0;
+}
+#container .wrapper.form-3.active #right-side .icon .icon-item{
+    background-image: url('../images/heart-blue.jpg');
+}
+#container .wrapper.form-3.active #right-side .content .sex {
+    width: 85%;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#container .wrapper.form-3.active #right-side .content .sex input{
+    text-align: end;
+    font-size: 13px;
+    padding: 0px 10px;
+    width: 48%;
+    background-position: 15% center !important;
+}
+#container .wrapper.form-3.active #right-side .content label{
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 11px;
+}
+#container .wrapper.form-3.active #right-side .content input {
+    margin: 0px 0px 7px 0px;
+    width: 85%;
+}
+#container .wrapper.form-3.active #right-side .content input[name=Вариант-1]{
+    background-image: url('../images/Vector-smart-object-copy-2.jpg');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 20% center;
+}
+#container .wrapper.form-3.active #right-side .content input[name=Вариант-1].active {
+    background-image: url('../images/Vector-smart-object-copy-3.jpg');
+    color: white;
+}
+#container .wrapper.form-3.active #right-side .content input[name=Вариант-2].active {
+    background-image: url('../images/Vector-smart-object-copy-4.jpg');
+    color: white;
+}
+#container .wrapper.form-3.active #right-side .content input[name=Вариант-2]{
+    background-image: url('../images/Vector-smart-object.jpg');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 20% center;
+}
+
+#container .wrapper.form-3.active #right-side .content input {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 11px;
+    font-weight: unset;
+    padding: 0px 8px;
+    box-sizing: border-box;
+}
+#container .wrapper.form-3.active #right-side .content input {
+    color: black;
+}
+#container .wrapper.form-3.active #right-side .content input.error {
+    border: 1px solid red !important;
+}
+#container .wrapper.form-3.active #right-side .content input.error::placeholder {
+    color: #b72020;
+}
+#container .wrapper.form-3.active #right-side .content {
+    width: 70%;
+}
+#container .wrapper.form-3.active #right-side .content .confirmation {
+    display: flex;
+    flex-direction: row;
+}
+#container .wrapper.form-3.active #right-side .content .confirmation input[type=checkbox]{
+    height: 10px;
+    width: 10px;
+    margin-right: 5px;
+}
+#container .wrapper.form-3.active #right-side .content .confirmation label{
+    white-space: pre-line;
+    font-size: 7px;
+}
+#container .wrapper.form-3.active #right-side .content input[type=button].active {
+    background-color: #1da7c0;
+}
+#container .wrapper.form-3.active #right-side .content > input.active {
+    border: 1px solid #d3d3d3;
+}
+#container .wrapper.form-3.active #right-side .content:last-of-type p {
+    color: #1da7c0;
+}
+#container .wrapper.form-3.active #right-side .content #continue {
+    width: 50%;
+    letter-spacing: 1.5px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 600;
+    border: 1px solid #1da7c0;
+    color: #aaa9a9;
+    margin: 5px 0px 0px 0px;
+}
+#container .wrapper.form-3.active #right-side .content #continue.active {
+    background-color: #1da7c0;
+    color: white;
+}
+/* form-3 finishes */
+
+#container .wrapper.form-4.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container .wrapper.form-4.active a{
+    font-size: 60px;
+    color: rgb(63, 63, 133);
+}
